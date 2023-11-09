@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea_1._3.Views.Modificar"
+             Title="Modificar">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Background="#D8BFD8">
+
+                <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0" Background="Purple">
+                    <Label Text="AGENDA PERSONAS" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+                </Frame>
+                <Label Text="EJERCICIO 1.3" FontSize="Title" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="Black"/>
+
+
+                <Entry x:Name="txtid" Placeholder="Codigo"  Keyboard="Text" FontAttributes="Bold" TextColor="Black" IsEnabled="False" FontSize="Body"  Text="{Binding Id}"/>
+
+
+                <Label Text="Nombres" FontAttributes="Bold" FontSize="18" Padding="30,8,30,0"/>
+                <Entry x:Name="txtnombre" Placeholder="Ingrese el Nombre" Keyboard="Text" Text="{Binding nombre}"/>
+
+                <Label Text="Apellidos" FontAttributes="Bold" FontSize="18" Padding="30,24,30,0"/>
+                <Entry x:Name="txtapellido" Placeholder="Ingrese el Apellido" Keyboard="Text" Text="{Binding apellidos}"/>
+
+                <Label Text="Edad" FontAttributes="Bold" FontSize="18" Padding="30,24,30,0"/>
+                <Entry x:Name="txtedad" Placeholder="Ingrese la Edad" Keyboard="Numeric" Text="{Binding edad}"/>
+
+                <Label Text="E-mail" FontAttributes="Bold" FontSize="18" Padding="30,24,30,0"/>
+                <Entry x:Name="txtcorreo" Placeholder="Ingrese el Correo" Keyboard="Email" Text="{Binding correo}"/>
+
+                <Label Text="Dirección" FontAttributes="Bold"  FontSize="18" Padding="30,24,30,0"/>
+                <Entry x:Name="txtdireccion" Placeholder="Ingrese la Dirección" Keyboard="Text" Text="{Binding direccion}"/>
+
+                <Button x:Name="btnsalvarr" Text="SALVAR" Clicked="btnsalvarr_Clicked"  Background="Purple"  TextColor="Beige"  FontAttributes="Bold" FontSize=" 20"/>
+                <Button x:Name="btneliminarr" Text="Eliminar" Clicked="btneliminarr_Clicked"  Background="Purple"  TextColor="Beige"  FontAttributes="Bold" FontSize=" 20"/>
+
+                <Label />
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
